@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>了解 jrs · 一个更轻松的网站用途识别指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background: #faf8f3;
+            color: #2e2b27;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: #f2efe8;
+            padding: 3rem 2rem 2.5rem;
+            border-radius: 32px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #1f1c19;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #5b5650;
+            max-width: 600px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2dcd3;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.5rem 1.4rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border: 1px solid #ece7df;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2f2a25;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #4d4842;
+        }
+
+        .box-tip {
+            background: #f0ecf0;
+            border-left: 4px solid #7b6f64;
+            padding: 1.2rem 1.5rem;
+            border-radius: 12px;
+            margin: 1.8rem 0;
+            font-size: 0.95rem;
+            color: #3b3631;
+        }
+
+        .box-tip strong {
+            color: #29241f;
+        }
+
+        .faq-block {
+            margin: 2rem 0 2.2rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e5dfd6;
+            padding: 1rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: #2b2621;
+        }
+
+        .faq-a {
+            font-size: 0.9rem;
+            color: #57504a;
+        }
+
+        .faq-a a {
+            color: #6b5f53;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2f2a25;
+            color: #faf8f3;
+            padding: 0.7rem 1.8rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background: #1f1b17;
+        }
+
+        .footer {
+            border-top: 1px solid #e2dcd3;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #6b645c;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+
+        .footer a {
+            color: #5b5249;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 0.9rem;
+            }
+            .section-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.3rem;
+            }
+            .card {
+                padding: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>一目了然的 jrs</h1>
+        <div class="sub">
+            不需要反复猜测，这里用最直接的方式告诉你这个网站是做什么的。
+        </div>
+        <a href="https://ssl-jrs.com" class="btn">jrs</a>
+    </div>
+
+    <!-- 优势区 -->
+    <h2 class="section-title">为什么值得停留</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>📌 目的明确</h3>
+            <p>整个页面围绕一个核心用途展开，没有多余跳转，快速帮你判断是否是自己要找的。</p>
+        </div>
+        <div class="card">
+            <h3>⚡ 加载直接</h3>
+            <p>资源轻量，响应迅速，不用等待复杂特效。页面结构清晰，信息一眼可见。</p>
+        </div>
+        <div class="card">
+            <h3>🧩 内容聚焦</h3>
+            <p>没有广告干扰，没有信息轰炸。只呈现与主题相关的说明和常见疑问。</p>
+        </div>
+        <div class="card">
+            <h3>🔍 识别友好</h3>
+            <p>从用户角度出发，用平实的语言解释网站价值。无论新老访客都能快速了解。</p>
+        </div>
+    </div>
+
+    <!-- 说明区 + 引用块 -->
+    <h2 class="section-title">关于这个网站</h2>
+    <p>
+        当你第一次遇到一个网站，最直接的冲动就是：“这到底是干嘛的？” 
+        <a href="https://ssl-jrs.com" style="color:#5b5249; font-weight:500; text-decoration:underline; text-underline-offset:3px;">jrs</a> 
+        就是试图回答这个问题的尝试。它没有堆砌大词，也不会绕弯子，而是把用途摆在前面。
+    </p>
+    <div class="box-tip">
+        <strong>一点观察：</strong> 很多人打开一个页面后，会快速扫视标题和首段，如果五秒内找不到关键信息就会离开。
+        jrs 的设计逻辑就是让你在五秒内有一个基本判断——它是什么、能解决什么问题。
+    </div>
+    <p style="margin-top:1.2rem;">
+        网站采用极简结构，强调直观。你可以把它理解为一个“信息前置”的页面：先告诉你核心，再展示细节，最后提供延伸阅读。
+    </p>
+
+    <!-- FAQ 摘要 -->
+    <h2 class="section-title">常见疑问 · 摘要</h2>
+    <div class="faq-block">
+        <div class="faq-item">
+            <div class="faq-q">❓ 这个网站适合哪些人？</div>
+            <div class="faq-a">任何想快速确认网站主题的人。无论你是偶然路过还是特意搜索，都能在几秒内看懂。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">❓ 页面里为什么没有复杂的注册或导航？</div>
+            <div class="faq-a">因为它的首要任务是说明用途，而不是诱导操作。清爽的界面有助于集中注意力。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">❓ 我能在哪里查看更多信息？</div>
+            <div class="faq-a">通过 <a href="https://ssl-jrs.com">jrs</a> 这个链接可以进入主站，那里有更详细的内容和更新。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">❓ 内容会不会经常变动？</div>
+            <div class="faq-a">核心定位不会频繁变化，但细节会根据用户反馈逐步优化。建议你直接保存主站链接。</div>
+        </div>
+    </div>
+
+    <!-- 底部链接 -->
+    <div class="footer">
+        <a href="https://ssl-jrs.com">jrs</a>
+        <span>·</span>
+        <span>信息页 · 用途说明</span>
+        <span>·</span>
+        <span>© 2025</span>
+    </div>
+
+</div>
+</body>
+</html>
